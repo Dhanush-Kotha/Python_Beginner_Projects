@@ -8,6 +8,8 @@ A collection of beginner-friendly Python projects created to practice programmin
 - 🧮 Simple Calculator
 - 🏧 ATM Management System
 - 🚆 Railway Ticket Booking
+- 📝 Quiz
+- 📇 Contact Management system
 
 ## 🛠️ Tech Stack
 
