@@ -10,6 +10,7 @@ A collection of beginner-friendly Python projects created to practice programmin
 - 🚆 Railway Ticket Booking
 - 📝 Quiz
 - 📇 Contact Management system
+- 🎬 Movie Recommendation System
 
 ## 🛠️ Tech Stack
 
