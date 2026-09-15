@@ -7,7 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 #1.Load movie dataset
-movies=pd.read_csv("E:\Python projects\movies.csv.zip")
+movies=pd.read_csv("movies.csv.zip")
 
 #2.Clean missing values
 movies['genres']=movies['genres'].fillna("")
