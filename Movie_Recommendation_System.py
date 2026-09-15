@@ -7,10 +7,7 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
 #1.Load movie dataset
-import gdown
-url = f"https://drive.google.com/uc?id={file_id}"
-gdown.download(url, "movies.csv", quiet=False)
-movies = pd.read_csv("movies.csv")
+movies = pd.read_csv("movies.csv.zip")
 
 #2.Clean missing values
 movies['genres']=movies['genres'].fillna("")
