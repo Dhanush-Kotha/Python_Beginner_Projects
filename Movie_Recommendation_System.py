@@ -1,6 +1,7 @@
 #Movie_Recommendation_System:
 
 #import modules
+import streamlit as st
 import pandas as pd
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -53,9 +54,14 @@ print("="*45)
 print("-----MOVIE RECOMMENDATION SYSTEM-----")
 print("="*45)
 
-while True:
-    movie=input("\nEnter a movie(Original_title) name (or type 'exit'):")
-    if movie.lower()=="exit":
-        print("\nThank you!")
-        break
-    recommend_movies(movie)
+st.title("🎬 Movie Recommendation System")
+
+movie = st.text_input("Enter a movie name")
+
+if st.button("Recommend"):
+    if movie.strip() == "":
+        st.warning("Please enter a movie name.")
+    elif movie.lower() == "exit":
+        st.info("Thank you!")
+    else:
+        recommend_movies(movie)
