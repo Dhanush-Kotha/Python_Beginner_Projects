@@ -1,3 +1,3 @@
-Sklearn
+Scikit-learn
 Pandas
 Streamlit
