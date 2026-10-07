@@ -38,7 +38,7 @@ st.write(
 @st.cache_data
 def load_movie_data():
 
-    movies = pd.read_csv("movies.csv.zip", compression="zip")
+    movies = pd.read_csv("Movie_Recommendation_System/movies.csv.zip")
 
     return movies
 
